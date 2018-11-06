@@ -5,9 +5,7 @@ import { ApolloProvider } from "react-apollo";
 import ReactDOM from "react-dom";
 import App from "./App";
 import AppSyncConfig from "./aws-exports";
-import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-
 
 const client = new AWSAppSyncClient({
   url: AppSyncConfig.aws_appsync_graphqlEndpoint,
@@ -27,7 +25,6 @@ ReactDOM.render(
   </ApolloProvider>,
   document.getElementById("root")
 );
-
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
